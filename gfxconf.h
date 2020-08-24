@@ -194,7 +194,7 @@
 ///////////////////////////////////////////////////////////////////////////
 // GWIN                                                                  //
 ///////////////////////////////////////////////////////////////////////////
-//#define GFX_USE_GWIN                                 GFXOFF
+#define GFX_USE_GWIN                                 GFXON
 
 //#define GWIN_NEED_WINDOWMANAGER                      GFXOFF
 //    #define GWIN_REDRAW_IMMEDIATE                    GFXOFF
@@ -212,30 +212,30 @@
 //#define GWIN_NEED_GRAPH                              GFXOFF
 //#define GWIN_NEED_GL3D                               GFXOFF
 
-//#define GWIN_NEED_WIDGET                             GFXOFF
-//#define GWIN_FOCUS_HIGHLIGHT_WIDTH                   1
-//    #define GWIN_NEED_LABEL                          GFXOFF
-//        #define GWIN_LABEL_ATTRIBUTE                 GFXOFF
-//    #define GWIN_NEED_BUTTON                         GFXOFF
-//        #define GWIN_BUTTON_LAZY_RELEASE             GFXOFF
-//    #define GWIN_NEED_SLIDER                         GFXOFF
-//        #define GWIN_SLIDER_NOSNAP                   GFXOFF
-//        #define GWIN_SLIDER_DEAD_BAND                5
-//        #define GWIN_SLIDER_TOGGLE_INC               20
-//    #define GWIN_NEED_CHECKBOX                       GFXOFF
+#define GWIN_NEED_WIDGET                             GFXON
+#define GWIN_FOCUS_HIGHLIGHT_WIDTH                   1
+    #define GWIN_NEED_LABEL                          GFXON
+        #define GWIN_LABEL_ATTRIBUTE                 GFXON
+    #define GWIN_NEED_BUTTON                         GFXON
+        #define GWIN_BUTTON_LAZY_RELEASE             GFXON
+    #define GWIN_NEED_SLIDER                         GFXON
+        #define GWIN_SLIDER_NOSNAP                   GFXON
+        #define GWIN_SLIDER_DEAD_BAND                5
+        #define GWIN_SLIDER_TOGGLE_INC               20
+    #define GWIN_NEED_CHECKBOX                       GFXON
 //    #define GWIN_NEED_IMAGE                          GFXOFF
 //        #define GWIN_NEED_IMAGE_ANIMATION            GFXOFF
-//    #define GWIN_NEED_RADIO                          GFXOFF
-//    #define GWIN_NEED_LIST                           GFXOFF
+    #define GWIN_NEED_RADIO                          GFXON
+    #define GWIN_NEED_LIST                           GFXON
 //        #define GWIN_NEED_LIST_IMAGES                GFXOFF
-//    #define GWIN_NEED_PROGRESSBAR                    GFXOFF
-//        #define GWIN_PROGRESSBAR_AUTO                GFXOFF
+    #define GWIN_NEED_PROGRESSBAR                    GFXON
+        #define GWIN_PROGRESSBAR_AUTO                GFXON
 //    #define GWIN_NEED_KEYBOARD                       GFXOFF
 //        #define GWIN_KEYBOARD_DEFAULT_LAYOUT         VirtualKeyboard_English1
 //        #define GWIN_NEED_KEYBOARD_ENGLISH1          GFXON
 //    #define GWIN_NEED_TEXTEDIT                       GFXOFF
-//    #define GWIN_FLAT_STYLING                        GFXOFF
-//    #define GWIN_WIDGET_TAGS                         GFXOFF
+    #define GWIN_FLAT_STYLING                        GFXON
+    #define GWIN_WIDGET_TAGS                         GFXON
 
 //#define GWIN_NEED_CONTAINERS                         GFXOFF
 //    #define GWIN_NEED_CONTAINER                      GFXOFF
@@ -282,7 +282,7 @@
 ///////////////////////////////////////////////////////////////////////////
 // GINPUT                                                                //
 ///////////////////////////////////////////////////////////////////////////
-//#define GFX_USE_GINPUT                               GFXOFF
+#define GFX_USE_GINPUT                               GFXON
 
 //#define GINPUT_NEED_MOUSE                            GFXOFF
 //    #define GINPUT_TOUCH_STARTRAW                    GFXOFF

@@ -5,6 +5,11 @@ cc_library(
     srcs = glob(
         [
             "src/gdisp/*.c",
+            "src/gwin/*.c",
+            "src/ginput/*.c",
+            "src/gqueue/*.c",
+            "src/gevent/*.c",
+            "src/gtimer/*.c",
             "src/gdisp/mcufont/*.c",
             "src/gdriver/*.c",
         ],
@@ -20,6 +25,11 @@ cc_library(
     hdrs = glob(
         [
             "src/gdisp/**/*.h",
+            "src/gwin/*.h",
+            "src/ginput/*.h",
+            "src/gqueue/*.h",
+            "src/gevent/*.h",
+            "src/gtimer/*.h",
             "src/gdisp/fonts/DejaVuSans*.c",
             "src/**/*_options.h",
             "src/**/*_rules.h",
@@ -38,14 +48,9 @@ cc_library(
         "src/gadc/gadc.h",
         "src/gaudio/gaudio.h",
         "src/gdriver/gdriver.h",
-        "src/gevent/gevent.h",
         "src/gfile/gfile.h",
-        "src/ginput/ginput.h",
         "src/gmisc/gmisc.h",
-        "src/gqueue/gqueue.h",
-        "src/gtimer/gtimer.h",
         "src/gtrans/gtrans.h",
-        "src/gwin/gwin.h",
         "drivers/gdisp/framebuffer/gdisp_lld_config.h",
         "boards/base/framebuffer_cpp_shim/board_framebuffer.h",
         "boards/base/framebuffer_cpp_shim/ugfx_framebuffer.h",
